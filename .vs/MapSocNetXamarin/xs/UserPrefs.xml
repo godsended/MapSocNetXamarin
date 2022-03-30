@@ -1,0 +1,79 @@
+﻿<Properties StartupConfiguration="{1388536E-C8FF-40A4-BA97-827E99A0A84D}|Default">
+  <MonoDevelop.Ide.ItemProperties.MapSocNetXamarin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.61FDE806-1A1D-4A3F-8CF6-B9B7BC8D8244" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapSocNetXamarin/Models/Network.cs">
+    <Files>
+      <File FileName="MapSocNetXamarin/Models/UserInfo.cs" Line="14" Column="30" />
+      <File FileName="MapSocNetXamarin/Models/Auth.cs" Line="277" Column="136" />
+      <File FileName="MapSocNetXamarin/ViewModels/ProfileDataFiller.cs" Line="226" Column="1" />
+      <File FileName="MapSocNetXamarin/Models/Galery.cs" Line="48" Column="37" />
+      <File FileName="MapSocNetXamarin/Models/Network.cs" Line="159" Column="53" />
+      <File FileName="MapSocNetXamarin/ViewModels/FriendsPageFiller.cs" Line="55" Column="1" />
+      <File FileName="MapSocNetXamarin/Models/Friend.cs" Line="69" Column="44" />
+      <File FileName="MapSocNetXamarin/Models/Debug.cs" Line="15" Column="57" />
+      <File FileName="MapSocNetXamarin/Models/Security.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Models/Pages.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Models/Localization.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/FriendsPage.xaml.cs" Line="76" Column="10" />
+      <File FileName="MapSocNetXamarin/Views/ProfilePage.xaml" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/ProfilePage.xaml.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin.iOS/Main.cs" Line="20" Column="1" />
+      <File FileName="MapSocNetXamarin/Helpers/ChatTemplateSelector.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Models/Chat.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Models/IDeviceDataLoader.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Models/Settings.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/ChatItem.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/ChatPageFiller.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/ChatsPageFiller.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/CustomEditor.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/CustomEntry.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/FriendItem.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/ImageMessage.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/Message.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/PageLozalizator.cs" Line="35" Column="79" />
+      <File FileName="MapSocNetXamarin/ViewModels/StickerMessage.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/ViewModels/TextMessage.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/AppNavigationPage.xaml" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/FriendsPage.xaml" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/AppNavigationPage.xaml.cs" Line="26" Column="2" />
+      <File FileName="MapSocNetXamarin/Views/ChatPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/ChatsList.xaml.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/ExistAccountLoginPage.xaml.cs" Line="42" Column="18" />
+      <File FileName="MapSocNetXamarin/Views/LoginPage.xaml.cs" Line="127" Column="18" />
+      <File FileName="MapSocNetXamarin/Views/RestorePassPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/SettingsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="MapSocNetXamarin/Views/UserPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Legacy.targets" Line="660" Column="53" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MapSocNetXamarin" expanded="True">
+            <Node name="MapSocNetXamarin" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AppNavigationPage.xaml" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="MapSocNetXamarin.Android" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.1.99.117" />
+  <MonoDevelop.Ide.ItemProperties.MapSocNetXamarin.Android PreferredExecutionTarget="Android.pixel_2_nougat_7_1_-_api_25" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_2_nougat_7_1_-_api_25" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/ilakolesnikov/Library/Caches/VisualStudio/17.0/Symbols/mono/mono/c633fe923832f0c3db3c4e6aa98e5592bf5a06e7</String>
+  </Debugger.DebugSourceFolders>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

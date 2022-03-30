@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MapSocNetXamarin</id>
+    <version>1.0.0</version>
+    <authors>MapSocNetXamarin</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugins.Forms.ImageCircle" version="3.0.0.5" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.CommunityToolkit" version="1.2.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Essentials" version="1.7.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.FFImageLoading" version="2.4.11.982" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.FFImageLoading.Forms" version="2.4.11.982" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.FFImageLoading.Transformations" version="2.4.11.982" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="5.0.0.1874" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/MapSocNetXamarin.dll" target="lib/netstandard2.1/MapSocNetXamarin.dll" />
+  </files>
+</package>

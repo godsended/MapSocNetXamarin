@@ -1,0 +1,1 @@
+C:\Users\IKGaming\source\repos\MapSocNetXamarin\MapSocNetXamarin.UWP\MapSocNetXamarin.UWP.csproj;arm

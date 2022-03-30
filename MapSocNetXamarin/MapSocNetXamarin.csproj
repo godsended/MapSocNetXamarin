@@ -1,0 +1,287 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <Configurations>Debug;Release;Release_Fix</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_Fix|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD;NETSTANDARD2_1;</DefineConstants>
+    <IntermediateOutputPath>obj\Release\netstandard2.1</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="loginbg.png" />
+    <None Remove="Resources\Fonts\FiraSans-Bold.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Bold.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-BoldItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-BoldItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Book.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Book.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-BookItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-BookItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Eight.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Eight.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-EightItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-EightItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-ExtraBold.otf" />
+    <None Remove="Resources\Fonts\FiraSans-ExtraBold.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-ExtraBoldItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-ExtraBoldItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-ExtraLight.otf" />
+    <None Remove="Resources\Fonts\FiraSans-ExtraLight.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-ExtraLightItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-ExtraLightItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Four.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Four.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-FourItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-FourItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Hair.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Hair.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-HairItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-HairItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Heavy.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Heavy.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-HeavyItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-HeavyItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Italic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Italic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Light SDF.asset" />
+    <None Remove="Resources\Fonts\FiraSans-Light SDF.asset.meta" />
+    <None Remove="Resources\Fonts\FiraSans-LightItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-LightItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Medium.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Medium.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-MediumItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-MediumItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Regular.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Regular.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-SemiBold.otf" />
+    <None Remove="Resources\Fonts\FiraSans-SemiBold.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-SemiBoldItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-SemiBoldItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Thin.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Thin.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-ThinItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-ThinItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Two.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Two.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-TwoItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-TwoItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-Ultra.otf" />
+    <None Remove="Resources\Fonts\FiraSans-Ultra.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-UltraItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-UltraItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-UltraLight.otf" />
+    <None Remove="Resources\Fonts\FiraSans-UltraLight.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSans-UltraLightItalic.otf" />
+    <None Remove="Resources\Fonts\FiraSans-UltraLightItalic.otf.meta" />
+    <None Remove="Resources\Fonts\FiraSansLight.otf" />
+    <None Remove="Resources\Fonts\FiraSansLight.otf.meta" />
+    <None Remove="Sprites\loginbg.png" />
+    <None Remove="Sprites\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Bold.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Bold.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-BoldItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-BoldItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Book.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Book.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-BookItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-BookItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Eight.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Eight.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-EightItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-EightItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ExtraBold.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ExtraBold.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ExtraBoldItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ExtraBoldItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ExtraLight.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ExtraLight.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ExtraLightItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ExtraLightItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Four.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Four.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-FourItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-FourItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Hair.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Hair.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-HairItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-HairItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Heavy.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Heavy.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-HeavyItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-HeavyItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Italic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Italic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Light SDF.asset" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Light SDF.asset.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-LightItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-LightItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Medium.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Medium.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-MediumItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-MediumItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Regular.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Regular.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-SemiBold.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-SemiBold.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-SemiBoldItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-SemiBoldItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Thin.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Thin.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ThinItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-ThinItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Two.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Two.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-TwoItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-TwoItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Ultra.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-Ultra.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-UltraItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-UltraItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-UltraLight.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-UltraLight.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-UltraLightItalic.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSans-UltraLightItalic.otf.meta" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSansLight.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FiraSansLight.otf.meta" />
+    <EmbeddedResource Remove="Sprites\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\FiraSans-Bold.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-BoldItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Book.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-BookItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Eight.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-EightItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-ExtraBold.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-ExtraBoldItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-ExtraLight.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-ExtraLightItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Four.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-FourItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Hair.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-HairItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Heavy.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-HeavyItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Italic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-LightItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Medium.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-MediumItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Regular.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-SemiBold.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-SemiBoldItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Thin.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-ThinItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Two.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-TwoItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-Ultra.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-UltraItalic.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-UltraLight.otf" />
+    <Resource Include="Resources\Fonts\FiraSans-UltraLightItalic.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\FiraSans-Bold.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-BoldItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Book.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-BookItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Eight.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-EightItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-ExtraBold.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-ExtraBoldItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-ExtraLight.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-ExtraLightItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Four.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-FourItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Hair.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-HairItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Heavy.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-HeavyItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Italic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Light SDF.asset" />
+    <Resource Include="Resources\Fonts\FiraSans-Light SDF.asset.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-LightItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Medium.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-MediumItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Regular.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-SemiBold.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-SemiBoldItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Thin.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-ThinItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Two.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-TwoItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-Ultra.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-UltraItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-UltraLight.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSans-UltraLightItalic.otf.meta" />
+    <Resource Include="Resources\Fonts\FiraSansLight.otf" />
+    <Resource Include="Resources\Fonts\FiraSansLight.otf.meta" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ExistAccountLoginPage.xaml.cs">
+      <DependentUpon>ExistAccountLoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UserPage.xaml.cs">
+      <DependentUpon>UserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\RestorePassPage.xaml.cs">
+      <DependentUpon>RestorePassPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Remove="Sprites\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\AppNavigationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ChatPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ChatsList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ExistAccountLoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\FriendsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RestorePassPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

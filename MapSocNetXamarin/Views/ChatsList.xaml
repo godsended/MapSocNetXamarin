@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapSocNetXamarin.Views.ChatsList"
+             BackgroundColor="White">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Label x:Name="SearchInput" Text="{DynamicResource CURR_Lable}" HorizontalOptions="Center" VerticalOptions="Center"
+                               FontFamily="SemiBold" TextColor="White" FontSize="Large" HorizontalTextAlignment="Center"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout x:Name="RootParent" BackgroundColor="White" Margin="0, 10, 0, 0">
+            
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <x:String x:Key="CURR_Lable"></x:String>
+        
+        <x:String x:Key="RU_Lable">Сообщения</x:String>
+
+        <x:String x:Key="ENG_Lable">Chats</x:String>
+    </ContentPage.Resources>
+</ContentPage>

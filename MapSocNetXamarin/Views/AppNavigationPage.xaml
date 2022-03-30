@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local ="clr-namespace:MapSocNetXamarin.Views"
+            x:Class="MapSocNetXamarin.Views.AppNavigationPage"
+            BarBackgroundColor="White"
+            UnselectedTabColor="LightGray"
+            SelectedTabColor="{DynamicResource CurrentMainColor}">
+    <NavigationPage IconImageSource="friends.png">
+        <x:Arguments>
+            <local:FriendsPage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage IconImageSource="chat.png">
+        <x:Arguments>
+            <local:ChatsList/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage IconImageSource="home.png">
+        <x:Arguments>
+            <local:ProfilePage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage IconImageSource="settings.png">
+        <x:Arguments>
+            <local:SettingsPage/>
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <style name="MainTheme" parent="MainTheme.Base">
+    <item name="colorPrimary">#0FCDC6</item>
+    <item name="colorPrimaryDark">#0FCDC6</item>
+    <item name="colorAccent">#0FCDC6</item>
+  </style>
+</resources>

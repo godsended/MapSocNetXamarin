@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MapSocNetXamarin.ViewModels"
+                          xmlns:Shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
+             x:Class="MapSocNetXamarin.Views.SettingsPage" BackgroundColor="Red">
+    <NavigationPage.TitleView>
+        <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
+            <!--<Shapes:Rectangle VerticalOptions="Fill" HorizontalOptions="Fill" Fill="{DynamicResource CurrentMainBrush}"/>-->
+            <Label Text="{DynamicResource CURR_Title}" HorizontalOptions="Center" FontFamily="SemiBold" TextColor="White" FontSize="Large"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid BackgroundColor="#F2F4F7">
+            <ScrollView>
+                <StackLayout Spacing="3">
+                    <Grid BackgroundColor="White" HeightRequest="60">
+                        <Label Text="{DynamicResource CURR_Theme}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start" Padding="15, 0, 0, 0"
+                               FontSize="18" FontFamily="Regular"/>
+                        <Grid  HorizontalOptions="End" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" Margin="0, 0, 23, 0">
+                            <Ellipse Fill="{DynamicResource CurrentMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40"/>
+                            <Ellipse Fill="White" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="34" HeightRequest="34"/>
+                            <Ellipse Fill="{DynamicResource CurrentMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" HeightRequest="30"/>
+                        </Grid>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="60" Margin="0, -3, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid VerticalOptions="Center" WidthRequest="40" HeightRequest="40" Grid.Column="0">
+                            <Ellipse Fill="{StaticResource DefaultMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40"/>
+                            <Ellipse Fill="White" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="34" HeightRequest="34"/>
+                            <Ellipse Fill="{StaticResource DefaultMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" HeightRequest="30"/>
+                            <Button x:Name="DefaultThemeButton" Clicked="DefaultThemeButton_Clicked" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Grid VerticalOptions="Center" WidthRequest="40" HeightRequest="40" Grid.Column="1">
+                            <Ellipse Fill="{StaticResource BlueMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40"/>
+                            <Ellipse Fill="White" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="34" HeightRequest="34"/>
+                            <Ellipse Fill="{StaticResource BlueMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" HeightRequest="30"/>
+                            <Button x:Name="BlueThemeButton" Clicked="BlueThemeButton_Clicked" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Grid VerticalOptions="Center" WidthRequest="40" HeightRequest="40" Grid.Column="2">
+                            <Ellipse Fill="{StaticResource DarkBlueMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40"/>
+                            <Ellipse Fill="White" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="34" HeightRequest="34"/>
+                            <Ellipse Fill="{StaticResource DarkBlueMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" HeightRequest="30"/>
+                            <Button x:Name="DarkBlueThemeButton" Clicked="DarkBlueThemeButton_Clicked" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Grid VerticalOptions="Center" WidthRequest="40" HeightRequest="40" Grid.Column="3">
+                            <Ellipse Fill="{StaticResource PinkMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40"/>
+                            <Ellipse Fill="White" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="34" HeightRequest="34"/>
+                            <Ellipse Fill="{StaticResource PinkMainBrush}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" HeightRequest="30"/>
+                            <Button x:Name="PinkThemeButton" Clicked="PinkThemeButton_Clicked" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Shapes:Rectangle IsVisible="false" x:Name="ThemesViewFill" BackgroundColor="White" VerticalOptions="Fill" HorizontalOptions="Fill" Grid.Column="0" Grid.ColumnSpan="4"/>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="60">
+                        <Label Text="{DynamicResource CURR_Id}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start" Padding="15, 0, 0, 0"
+                               FontSize="18" FontFamily="Regular"/>
+                        <Button x:Name="ShareIdButoon" Clicked="ShareIdButoon_Clicked" BackgroundColor="Transparent"/>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="60">
+                        <Label Text="{DynamicResource CURR_BlackList}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start" Padding="15, 0, 0, 0"
+                               FontSize="18" FontFamily="Regular"/>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="140">
+                        <Label Text="{DynamicResource CURR_Lang}" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Start" Padding="15, 15, 0, 0"
+                               FontSize="18" FontFamily="Regular"/>
+                        <Grid HeightRequest="90" Padding="15, 0, 15, 0" BackgroundColor="White" VerticalOptions="End">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Label x:Name="RussianLanguageLabel" Text="Русский" FontFamily="Light" FontSize="17" VerticalOptions="Center" TextColor="Black" Grid.Row="0" Margin="15, 0, 0, 0"/>
+                            <Button x:Name="SelectRussianLanguageButton" Clicked="SelectRussianLanguageButton_Clicked" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0"/>
+                            <Label x:Name="EnglishLanguageLabel" Text="English" FontFamily="Light" FontSize="17" VerticalOptions="Center" TextColor="Black" Grid.Row="1" Margin="15, 0, 0, 0"/>
+                            <Button x:Name="SelectEnglishLanguageButton" Clicked="SelectEnglishLanguageButton_Clicked" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="1"/>
+                        </Grid>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="60">
+                        <Label Text="{DynamicResource CURR_Geo}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start" Padding="15, 0, 0, 0"
+                               FontSize="18" FontFamily="Regular"/>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="60">
+                        <Label Text="{DynamicResource CURR_Pass}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start" Padding="15, 0, 0, 0"
+                               FontSize="18" FontFamily="Regular"/>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="250" Margin="0, -3, 0, 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Shapes:Rectangle Fill="#F2F4F7" Style="{StaticResource BgEntrysStyle}"
+                            Margin="15, 0, 15, 0"
+                            Grid.Row="0"/>
+                        <local:CustomEntry x:Name="OldPassEntry" Style="{StaticResource InputStyle}" Placeholder="{DynamicResource CURR_EnterOldPass}"
+                                           HorizontalTextAlignment="Start" 
+                                           Margin="30, 0, 15, 0" Grid.Row="0"/>
+                        <Shapes:Rectangle Fill="#F2F4F7" Style="{StaticResource BgEntrysStyle}"
+                            Margin="15, 0, 15, 0"
+                            Grid.Row="1"/>
+                        <local:CustomEntry x:Name="NewPassEntry" Style="{StaticResource InputStyle}" Placeholder="{DynamicResource CURR_EnterNewPass}"
+                                           HorizontalTextAlignment="Start" 
+                                           Margin="30, 0, 15, 0" Grid.Row="1"/>
+                        <Shapes:Rectangle Fill="#F2F4F7" Style="{StaticResource BgEntrysStyle}"
+                            Margin="15, 0, 15, 0"
+                            Grid.Row="2"/>
+                        <local:CustomEntry x:Name="RepNewPassEntry" Style="{StaticResource InputStyle}" Placeholder="{DynamicResource CURR_RepeatNewPass}"
+                                           HorizontalTextAlignment="Start" 
+                                           Margin="30, 0, 15, 0" Grid.Row="2"/>
+                        <Button x:Name="ChangePass" Style="{StaticResource ButtonStyle}" Grid.Row="3" BackgroundColor="{DynamicResource CurrentMainColor}"
+                                Margin="15, 0, 15, 10" Text="{DynamicResource CURR_ChangePass}"
+                                TextColor="White" FontFamily="SemiBold" FontSize="16" HeightRequest="60" VerticalOptions="Start" Clicked="ChangePass_Clicked"/>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="60">
+                        <Button x:Name="CacheButton" 
+                                Text="{DynamicResource CURR_Cache}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start" Padding="15, 0, 0, 0"
+                               FontSize="18" FontFamily="Regular" Clicked="CacheButton_Clicked" BackgroundColor="Transparent" TextTransform="None"/>
+                    </Grid>
+                    <Grid BackgroundColor="White" HeightRequest="60">
+                        <Button x:Name="LeaveAccButton" Text="{DynamicResource CURR_Leave}" TextColor="Red" VerticalOptions="Center" HorizontalOptions="Start" Padding="15, 0, 0, 0"
+                               FontSize="18" FontFamily="Light" TextTransform="None" BackgroundColor="Transparent" Clicked="LeaveAccButton_Clicked"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <x:String x:Key="CURR_Title"></x:String>
+        <x:String x:Key="CURR_Theme"></x:String>
+        <x:String x:Key="CURR_Id"></x:String>
+        <x:String x:Key="CURR_BlackList"></x:String>
+        <x:String x:Key="CURR_Lang"></x:String>
+        <x:String x:Key="CURR_Geo"></x:String>
+        <x:String x:Key="CURR_Pass"></x:String>
+        <x:String x:Key="CURR_Cache"></x:String>
+        <x:String x:Key="CURR_Leave"></x:String>
+        <x:String x:Key="CURR_YourId"></x:String>
+        <x:String x:Key="CURR_SuccesChanged"></x:String>
+        <x:String x:Key="CURR_Cancel"></x:String>
+        <x:String x:Key="CURR_EnterOldPass"></x:String>
+        <x:String x:Key="CURR_EnterNewPass"></x:String>
+        <x:String x:Key="CURR_RepeatNewPass"></x:String>
+        <x:String x:Key="CURR_ChangePass"></x:String>
+        <x:String x:Key="CURR_PassChanging"></x:String>
+        <x:String x:Key="CURR_PassChangingText"></x:String>
+        <x:String x:Key="CURR_ShortPassError"></x:String>
+        <x:String x:Key="CURR_PassError"></x:String>
+        <x:String x:Key="CURR_RepPassError"></x:String>
+        <x:String x:Key="CURR_CacheClearing"></x:String>
+        <x:String x:Key="CURR_CacheClearingText"></x:String>
+
+        <x:String x:Key="RU_Title">Настройки</x:String>
+        <x:String x:Key="RU_Theme">Цветовая схема</x:String>
+        <x:String x:Key="RU_Id">Поделиться id</x:String>
+        <x:String x:Key="RU_BlackList">Чёрный список</x:String>
+        <x:String x:Key="RU_Lang">Язык</x:String>
+        <x:String x:Key="RU_Geo">Геолокация</x:String>
+        <x:String x:Key="RU_Pass">Изменить пароль</x:String>
+        <x:String x:Key="RU_Cache">Очистить кэш</x:String>
+        <x:String x:Key="RU_Leave">Выйти из аккаунта</x:String>
+        <x:String x:Key="RU_YourId">Ваш id</x:String>
+        <x:String x:Key="RU_SuccesChanged">был успешно скопирован</x:String>
+        <x:String x:Key="RU_Cancel">Назад</x:String>
+        <x:String x:Key="RU_EnterOldPass">Введите текущий пароль</x:String>
+        <x:String x:Key="RU_EnterNewPass">Введите новый пароль</x:String>
+        <x:String x:Key="RU_RepeatNewPass">Повторите новый пароль</x:String>
+        <x:String x:Key="RU_ChangePass">Изменить пароль</x:String>
+        <x:String x:Key="RU_PassChanging">Изменение пароля</x:String>
+        <x:String x:Key="RU_PassChangingText">прошло успешно</x:String>
+        <x:String x:Key="RU_ShortPassError">Пароль слишком короткий</x:String>
+        <x:String x:Key="RU_PassError">При именении пароля произошла ошибка. Проверьте текущий пароль</x:String>
+        <x:String x:Key="RU_RepPassError">Пароли не совпадают</x:String>
+        <x:String x:Key="RU_CacheClearing">Кэш</x:String>
+        <x:String x:Key="RU_CacheClearingText">успешно очищен</x:String>
+
+        <x:String x:Key="ENG_Title">Settings</x:String>
+        <x:String x:Key="ENG_Theme">Theme</x:String>
+        <x:String x:Key="ENG_Id">Share id</x:String>
+        <x:String x:Key="ENG_BlackList">Black list</x:String>
+        <x:String x:Key="ENG_Lang">Language</x:String>
+        <x:String x:Key="ENG_Geo">Geolocation</x:String>
+        <x:String x:Key="ENG_Pass">Change password</x:String>
+        <x:String x:Key="ENG_Cache">Clear cache</x:String>
+        <x:String x:Key="ENG_Leave">Leave account</x:String>
+        <x:String x:Key="ENG_YourId">Your id</x:String>
+        <x:String x:Key="ENG_SuccesChanged">was succesfully copied</x:String>
+        <x:String x:Key="ENG_Cancel">Cancel</x:String>
+        <x:String x:Key="ENG_EnterOldPass">Enter current password</x:String>
+        <x:String x:Key="ENG_EnterNewPass">Enter new password</x:String>
+        <x:String x:Key="ENG_RepeatNewPass">Repeat new password</x:String>
+        <x:String x:Key="ENG_ChangePass">Change password</x:String>
+        <x:String x:Key="ENG_PassChanging">Password changing</x:String>
+        <x:String x:Key="ENG_PassChangingText">Password succesfully changed</x:String>
+        <x:String x:Key="ENG_ShortPassError">Password too short</x:String>
+        <x:String x:Key="ENG_PassError">An error occurred while changing the password. Check your current password</x:String>
+        <x:String x:Key="ENG_RepPassError">Password mismatch</x:String>
+        <x:String x:Key="ENG_CacheClearing">Cache</x:String>
+        <x:String x:Key="ENG_CacheClearingText">successfully cleared</x:String>
+    </ContentPage.Resources>
+</ContentPage>

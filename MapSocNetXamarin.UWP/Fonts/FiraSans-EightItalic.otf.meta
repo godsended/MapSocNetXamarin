@@ -1,0 +1,45 @@
+fileFormatVersion: 2
+guid: 2b1a1335019c4e14195dcb8fcb687001
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Fira Sans
+  fontNames:
+  - Fira Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f54071c16aae2b04bbb97753982280b7, type: 3}
+  - {fileID: 12800000, guid: 55524502330ddff4784ea30d66ff5eb9, type: 3}
+  - {fileID: 12800000, guid: 961b1f52b47aa6744b30db86a7c4ce20, type: 3}
+  - {fileID: 12800000, guid: ca76ece235ba34c409b60639a89e674c, type: 3}
+  - {fileID: 12800000, guid: 431fe1434570daa4a8c1d52c5ed1d3f9, type: 3}
+  - {fileID: 12800000, guid: f3304845aceaaa14a8917147a6663b79, type: 3}
+  - {fileID: 12800000, guid: 63e00de5f010a3640993403c35169185, type: 3}
+  - {fileID: 12800000, guid: e0f32d46aea56284e908f13cfa4306bd, type: 3}
+  - {fileID: 12800000, guid: 4ad618b63563e754dabd2ce8944ffadb, type: 3}
+  - {fileID: 12800000, guid: 03443df6f65ae274bb757c56965c5c82, type: 3}
+  - {fileID: 12800000, guid: 61409ed78f9ff8a44904935fa341bca8, type: 3}
+  - {fileID: 12800000, guid: 2065cbf8330d34a4d8d44d1b407e8428, type: 3}
+  - {fileID: 12800000, guid: 8d7830199d822d145ab0dddc32f7dd31, type: 3}
+  - {fileID: 12800000, guid: 0bce870b57025664d9cea231ff2390de, type: 3}
+  - {fileID: 12800000, guid: 09513b1bbc3223d49ae9828fd597f463, type: 3}
+  - {fileID: 12800000, guid: 917b844b58b0fa240a9a46f92e48cd0f, type: 3}
+  - {fileID: 12800000, guid: 0764d74c7be910c4aa034b75b972d62a, type: 3}
+  - {fileID: 12800000, guid: b39be24da288be543b110afef0726547, type: 3}
+  - {fileID: 12800000, guid: 4696c0cd9c83bc34e982db317b4d8a5c, type: 3}
+  - {fileID: 12800000, guid: 58e55ffdd10594c4f9e1832bbde048ea, type: 3}
+  - {fileID: 12800000, guid: 46e4484e7cec2564ea1a08aa0790b398, type: 3}
+  - {fileID: 12800000, guid: 1aeb870fbd121e64d84f0ed5aaf9b309, type: 3}
+  - {fileID: 12800000, guid: 1bf85d4f6bcb7c94eada347229d7183d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

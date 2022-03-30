@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/MapSocNetXamarin.csproj": {}
+  },
+  "projects": {
+    "/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/MapSocNetXamarin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/MapSocNetXamarin.csproj",
+        "projectName": "MapSocNetXamarin",
+        "projectPath": "/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/MapSocNetXamarin.csproj",
+        "packagesPath": "/Users/ilakolesnikov/.nuget/packages/",
+        "outputPath": "/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ilakolesnikov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.FFImageLoading": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.FFImageLoading.Forms": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.FFImageLoading.Transformations": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.1874, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4d9b9c62-0e66-4c3c-9f3d-25081a72d48a": {
+      "ProjectGuid": "4d9b9c62-0e66-4c3c-9f3d-25081a72d48a",
+      "DisplayName": "MapSocNetXamarin",
+      "ColorIndex": 0
+    },
+    "1388536e-c8ff-40a4-ba97-827e99a0a84d": {
+      "ProjectGuid": "1388536e-c8ff-40a4-ba97-827e99a0a84d",
+      "DisplayName": "MapSocNetXamarin.Android",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

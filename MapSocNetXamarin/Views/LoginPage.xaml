@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MapSocNetXamarin.ViewModels"
+             xmlns:Shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
+             x:Class="MapSocNetXamarin.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="loginbg.png"
+                   VerticalOptions="Fill"
+                   HorizontalOptions="Fill"
+                   Aspect="AspectFill"/>
+            <StackLayout 
+                         Padding="20, 0, 20, 0"
+                         Margin="0, 200, 0, 100"
+                         VerticalOptions="Fill">
+                <Grid>
+                    <Shapes:Rectangle Style="{StaticResource BgEntrysStyle}"/>
+                    <local:CustomEntry x:Name="NameInput" Placeholder="{DynamicResource CURR_Name}" Style="{StaticResource InputStyle}" Keyboard="Text"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Shapes:Rectangle x:Name="MaleButtonImage" Style="{StaticResource BgEntrysStyle}"/>
+                        <Button x:Name="MaleButton" Clicked="MaleButton_Clicked" Style="{StaticResource ButtonStyle}" 
+                                Text="{DynamicResource CURR_Male}" BackgroundColor="Transparent"/>
+                        <Image x:Name="MaleImage" Source="male.png"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center"
+                               WidthRequest="30"
+                               HeightRequest="30"
+                               Margin="15, 0, 0 ,0"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Shapes:Rectangle x:Name="FemaleButtonImage" Style="{StaticResource BgEntrysStyle}"/>
+                        <Button x:Name="FemaleButton" Clicked="FemaleButton_Clicked" Style="{StaticResource ButtonStyle}"
+                                Text="{DynamicResource CURR_Female}" BackgroundColor="Transparent"/>
+                        <Image x:Name="FemaleImage" Source="female.png"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center"
+                               WidthRequest="25"
+                               HeightRequest="25"
+                               Margin="15, 0, 0 ,0"/>
+                    </Grid>
+                </Grid>
+                <Grid>
+                    <Shapes:Rectangle Style="{StaticResource BgEntrysStyle}"/>
+                    <local:CustomEntry x:Name="MailInput" 
+                                       Placeholder="{DynamicResource CURR_Mail}" Style="{StaticResource InputStyle}" Keyboard="Email"/>
+                </Grid>
+                <Grid>
+                    <Shapes:Rectangle Style="{StaticResource BgEntrysStyle}"/>
+                    <local:CustomEntry x:Name="PassInput" IsPassword="True" 
+                                       Placeholder="{DynamicResource CURR_Pass}" Style="{StaticResource InputStyle}" Keyboard="Default"/>
+                </Grid>
+                <Button x:Name="RegistrationButton" Clicked="RegistrationButton_Clicked"
+                        BackgroundColor="{DynamicResource CurrentMainColor}"
+                        CornerRadius="25"
+                        Margin="0, 30, 0, 0"
+                        Text="{DynamicResource CURR_SignUp}"
+                        FontFamily="SemiBold"
+                        FontSize="16"
+                        TextColor="White"
+                        Style="{StaticResource ButtonStyle}"/>
+            </StackLayout>
+            <Button x:Name="OpenExAccLoginPage" Text="{DynamicResource CURR_SignIn}"
+                    VerticalOptions="End"
+                    TextColor="{DynamicResource CurrentMainColor}"
+                    BackgroundColor="Transparent"
+                    FontFamily="SemiBold"
+                    FontSize="16"
+                    TextTransform="None"
+                    Margin="0, 0, 0, 20"
+                    Clicked="OpenExAccLoginPage_Clicked"/>
+            <Shapes:Rectangle BackgroundColor="{DynamicResource CurrentMainColor}"
+                       VerticalOptions="End"
+                       HorizontalOptions="Center"
+                       Margin="0, 0, 0, 30"
+                       WidthRequest="80"
+                       HeightRequest="1"/>
+        </Grid>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <x:String x:Key="CURR_Name"></x:String>
+        <x:String x:Key="CURR_Male"></x:String>
+        <x:String x:Key="CURR_Female"></x:String>
+        <x:String x:Key="CURR_Mail"></x:String>
+        <x:String x:Key="CURR_Pass"></x:String>
+        <x:String x:Key="CURR_SignUp"></x:String>
+        <x:String x:Key="CURR_SignIn"></x:String>
+        <x:String x:Key="CURR_Error"></x:String>
+        <x:String x:Key="CURR_Cancel"></x:String>
+        <x:String x:Key="CURR_NameError"></x:String>
+        <x:String x:Key="CURR_PassError"></x:String>
+        <x:String x:Key="CURR_MailError"></x:String>
+        <x:String x:Key="CURR_ExMailError"></x:String>
+        <x:String x:Key="CURR_RestorePass"></x:String>
+        <x:String x:Key="CURR_RestorePassText"></x:String>
+        <x:String x:Key="CURR_Submit"></x:String>
+        <x:String x:Key="CURR_DataError"></x:String>
+        <x:String x:Key="CURR_RegError"></x:String>
+        <x:String x:Key="CURR_DevError"></x:String>
+        <x:String x:Key="CURR_GenderError"></x:String>
+        <x:String x:Key="CURR_ShortPassError"></x:String>
+
+        <x:String x:Key="RU_Name">Имя и фамилия</x:String>
+        <x:String x:Key="RU_Male">Мужчина</x:String>
+        <x:String x:Key="RU_Female">Женщина</x:String>
+        <x:String x:Key="RU_Mail">Почта</x:String>
+        <x:String x:Key="RU_Pass">Пароль</x:String>
+        <x:String x:Key="RU_SignUp">Зарегистрироваться</x:String>
+        <x:String x:Key="RU_SignIn">Войти</x:String>
+        <x:String x:Key="RU_Error">Ошибка</x:String>
+        <x:String x:Key="RU_Cancel">Назад</x:String>
+        <x:String x:Key="RU_NameError">Введите ваши имя и фамилию в формате (Имя Фамилия)</x:String>
+        <x:String x:Key="RU_PassError">Вы не ввели ваш пароль</x:String>
+        <x:String x:Key="RU_MailError">Вы не ввели вашу почту</x:String>
+        <x:String x:Key="RU_IncorrectMailError">Вы ввели неверную почту</x:String>
+        <x:String x:Key="RU_ExMailError">Аккаунт с такой почтой уже существует</x:String>
+        <x:String x:Key="RU_RestorePass">Восстановление пароля</x:String>
+        <x:String x:Key="RU_RestorePassText">В последний раз вы пытались восстановить пароль. Введите вашу почту и код, который вам пришел</x:String>
+        <x:String x:Key="RU_Submit">Принять</x:String>
+        <x:String x:Key="RU_DataError">Вы ввели неверные данные</x:String>
+        <x:String x:Key="RU_RegError">При регистрации возникла ошибка, попробуйте еще раз</x:String>
+        <x:String x:Key="RU_DevError">Обратитесь в тех поддержку или разработчику</x:String>
+        <x:String x:Key="RU_GenderError">Вы не указали ваш пол</x:String>
+        <x:String x:Key="RU_ShortPassError">Ваш пароль слишком короткий</x:String>
+
+        <x:String x:Key="ENG_Name">Name and surname</x:String>
+        <x:String x:Key="ENG_Male">Male</x:String>
+        <x:String x:Key="ENG_Female">Female</x:String>
+        <x:String x:Key="ENG_Mail">Mail</x:String>
+        <x:String x:Key="ENG_Pass">Password</x:String>
+        <x:String x:Key="ENG_SignUp">Sign Up</x:String>
+        <x:String x:Key="ENG_SignIn">Sign In</x:String>
+        <x:String x:Key="ENG_Error">Error</x:String>
+        <x:String x:Key="ENG_Cancel">Cancel</x:String>
+        <x:String x:Key="ENG_NameError">Enter your first and last name in the format (First Name Last Name)</x:String>
+        <x:String x:Key="ENG_PassError">You did not enter your password</x:String>
+        <x:String x:Key="ENG_MailError">You did not enter your mail</x:String>
+        <x:String x:Key="ENG_IncorrectMailError">You entered incorrect mail</x:String>
+        <x:String x:Key="ENG_ExMailError">An account with such mail already exists</x:String>
+        <x:String x:Key="ENG_RestorePass">Password recovery</x:String>
+        <x:String x:Key="ENG_RestorePassText">The last time you tried to recover your password. Enter your mail and the code that came to you</x:String>
+        <x:String x:Key="ENG_Submit">Submit</x:String>
+        <x:String x:Key="ENG_DataError">You entered incorrect data</x:String>
+        <x:String x:Key="ENG_RegError">An error occurred during registration, please try again</x:String>
+        <x:String x:Key="ENG_DevError">Contact tech support or developer</x:String>
+        <x:String x:Key="ENG_GenderError">You have not specified your gender</x:String>
+        <x:String x:Key="ENG_ShortPassError">Your password is too short</x:String>
+    </ContentPage.Resources>
+</ContentPage>

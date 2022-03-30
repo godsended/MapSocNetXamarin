@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
+             x:Class="MapSocNetXamarin.App">
+    <Application.Resources>
+
+        <!--___________________________________________Styles_____________________________________________________________________________-->
+
+        <Style ApplyToDerivedTypes="true" TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{DynamicResource CurrentMainColor}"/> 
+        </Style>
+        
+        <Style x:Key="InputStyle" TargetType="Entry">
+            <Setter Property="VerticalOptions" Value="Fill" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="PlaceholderColor" Value="#0F0A24"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="TextColor" Value="DarkSlateGray"/>
+            <Setter Property="FontFamily" Value="Light"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="ReturnType" Value="Done"/>
+        </Style>
+        <Style x:Key="EditorStyle" TargetType="Editor">
+            <Setter Property="VerticalOptions" Value="Fill" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="PlaceholderColor" Value="#0F0A24"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="TextColor" Value="DarkSlateGray"/>
+            <Setter Property="FontFamily" Value="Light"/>
+            <Setter Property="HeightRequest" Value="50"/>
+        </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="CornerRadius" Value="25"/>
+            <Setter Property="TextColor" Value="#0F0A24"/>
+            <Setter Property="TextTransform" Value="None"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value="Light"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="HeightRequest" Value="50"/>
+        </Style>
+        <Style x:Key="BgEntrysStyle" TargetType="Shapes:Rectangle">
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="Fill" Value="White"/>
+            <Setter Property="RadiusX" Value="25"/>
+            <Setter Property="RadiusY" Value="25"/>
+        </Style>
+        
+        <!--___________________________________________Colors_____________________________________________________________________________-->
+
+        <Color x:Key="CurrentMainColor"/>
+        <Color x:Key="CurrentSecondaryColor"/>
+
+        <Color x:Key="DefaultMainColor">#0FCDC6</Color>
+        <Color x:Key="DefaultSecondaryColor">#C1F5F3</Color>
+        <Color x:Key="PinkMainColor">#F776B7</Color>
+        <Color x:Key="PinkSecondaryColor">#FFD9EC</Color>
+        <Color x:Key="BlueMainColor">#00D5F5</Color>
+        <Color x:Key="BlueSecondaryColor">#B2F5FF</Color>
+        <Color x:Key="DarkBlueMainColor">#4080C9</Color>
+        <Color x:Key="DarkBlueSecondaryColor">#C5DFFD</Color>
+
+        <SolidColorBrush x:Key="CurrentMainBrush" Color="{DynamicResource CurrentMainColor}"/>
+        <SolidColorBrush x:Key="CurrentSecondaryBrush" Color="{DynamicResource CurrentSecondaryColor}"/>
+
+        <SolidColorBrush x:Key="DefaultMainBrush" Color="#0FCDC6" />
+        <SolidColorBrush x:Key="DefaultSecondaryBrush" Color="#C1F5F3"/>
+        <SolidColorBrush x:Key="PinkMainBrush" Color="#F776B7"/>
+        <SolidColorBrush x:Key="PinkSecondaryBrush" Color="#FFD9EC"/>
+        <SolidColorBrush x:Key="BlueMainBrush" Color="#00D5F5"/>
+        <SolidColorBrush x:Key="BlueSecondaryBrush" Color="#B2F5FF"/>
+        <SolidColorBrush x:Key="DarkBlueMainBrush" Color="#4080C9"/>
+        <SolidColorBrush x:Key="DarkBlueSecondaryBrush" Color="#C5DFFD"/>
+
+        <!--___________________________________________Images_____________________________________________________________________________-->
+
+        <FileImageSource x:Key="AddPhoto" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_Beer" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_Bowling" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_Home" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_Inst" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_Love" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_Offers" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_Soccer" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_Walk" File="addphoto.png"/>
+        <FileImageSource x:Key="Status_YouTube" File="addphoto.png"/>
+        <FileImageSource x:Key="ExAccLogBG" File="addphoto.png"/>
+        <FileImageSource x:Key="Female" File="addphoto.png"/>
+        <FileImageSource x:Key="Friends" File="addphoto.png"/>
+        <FileImageSource x:Key="Home" File="addphoto.png"/>
+        <FileImageSource x:Key="LoginBG" File="addphoto.png"/>
+        <FileImageSource x:Key="Male" File="addphoto.png"/>
+        <FileImageSource x:Key="Podium" File="addphoto.png"/>
+        <FileImageSource x:Key="Settings" File="addphoto.png"/>
+        <FileImageSource x:Key="WhiteFemale" File="addphoto.png"/>
+        <FileImageSource x:Key="WhiteMail" File="addphoto.png"/>
+        <FileImageSource x:Key="RateBG" File="addphoto.png"/>
+        <FileImageSource x:Key="Rate_1" File="addphoto.png"/>
+        <FileImageSource x:Key="Rate_2" File="addphoto.png"/>
+        <FileImageSource x:Key="Rate_3" File="addphoto.png"/>
+        <FileImageSource x:Key="Rate_4" File="addphoto.png"/>
+        <FileImageSource x:Key="Search" File="Search.png"/>
+        <FileImageSource x:Key="AddFriend" File="addfriend.png"/>
+        <FileImageSource x:Key="HorizontalDots" File="hdots.png"/>
+        <FileImageSource x:Key="Params" File="params.png"/>
+    </Application.Resources>
+</Application>

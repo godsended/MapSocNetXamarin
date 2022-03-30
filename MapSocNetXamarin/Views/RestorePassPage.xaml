@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MapSocNetXamarin.ViewModels"
+             xmlns:Shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
+             x:Class="MapSocNetXamarin.Views.RestorePassPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="loginbg.png"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="Fill"
+                   Aspect="AspectFill"/>
+            <StackLayout Padding="20, 0, 20, 0"
+                         Margin="0, 200, 0, 100"
+                         VerticalOptions="Fill">
+                <Grid x:Name="MailInputElement">
+                    <Shapes:Rectangle Style="{StaticResource BgEntrysStyle}"/>
+                    <local:CustomEntry x:Name="MailInput" Placeholder="Введите почту" Style="{StaticResource InputStyle}" Keyboard="Email"/>
+                </Grid>
+                <Grid x:Name="CodeInputElement" IsVisible="False">
+                    <Shapes:Rectangle Style="{StaticResource BgEntrysStyle}"/>
+                    <local:CustomEntry x:Name="CodeInput" Placeholder="Введите код" Style="{StaticResource InputStyle}" Keyboard="Numeric"/>
+                </Grid>
+                <Grid x:Name="NewPassInputElement" IsVisible="False">
+                    <Shapes:Rectangle Style="{StaticResource BgEntrysStyle}"/>
+                    <local:CustomEntry x:Name="NewPassInput" Placeholder="Введите новый пароль" Style="{StaticResource InputStyle}" IsPassword="True"
+                                       Keyboard="Default"/>
+                </Grid>
+                <Button x:Name="SubmitButton" Clicked="SubmitButton_Clicked"
+                        BackgroundColor="{DynamicResource CurrentMainColor}"
+                        CornerRadius="25"
+                        FontSize="16"
+                        TextColor="White"
+                        FontFamily="SemiBold"
+                        Margin="0, 30, 0, 0"
+                        Text="Подтвердить"
+                        Style="{StaticResource ButtonStyle}"/>
+            </StackLayout>
+            <Button x:Name="BackButton" Text="Назад"
+                    VerticalOptions="End"
+                    TextColor="{DynamicResource CurrentMainColor}"
+                    BackgroundColor="Transparent"
+                    FontFamily="SemiBold"
+                    FontSize="16"
+                    TextTransform="None"
+                    Margin="0, 0, 0, 20"
+                    Clicked="BackButton_Clicked"/>
+            <Shapes:Rectangle BackgroundColor="{DynamicResource CurrentMainColor}"
+                       VerticalOptions="End"
+                       HorizontalOptions="Center"
+                       Margin="0, 0, 0, 30"
+                       WidthRequest="60"
+                       HeightRequest="1"/>
+        </Grid>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <x:String x:Key="CURR_Mail"></x:String>
+        <x:String x:Key="CURR_Code"></x:String>
+        <x:String x:Key="CURR_Pass"></x:String>
+        <x:String x:Key="CURR_Cancel"></x:String>
+        <x:String x:Key="CURR_Submit"></x:String>
+        <x:String x:Key="CURR_MailError"></x:String>
+        <x:String x:Key="CURR_Error"></x:String>
+        <x:String x:Key="CURR_CodeError"></x:String>
+        <x:String x:Key="CURR_PassError"></x:String>
+        <x:String x:Key="CURR_PassChange"></x:String>
+        <x:String x:Key="CURR_PassChangeText"></x:String>
+
+        <x:String x:Key="RU_Mail">Введите почту</x:String>
+        <x:String x:Key="RU_Code">Введите код</x:String>
+        <x:String x:Key="RU_Pass">Пароль</x:String>
+        <x:String x:Key="RU_Cancel">Назад</x:String>
+        <x:String x:Key="RU_Submit">Подтвердить</x:String>
+        <x:String x:Key="RU_MailError">Проверьте введенную почту и попробуйте еще раз</x:String>
+        <x:String x:Key="RU_Error">Ошибка</x:String>
+        <x:String x:Key="RU_CodeError">Неверный код</x:String>
+        <x:String x:Key="RU_PassError">Придумате новый пароль</x:String>
+        <x:String x:Key="RU_PassChange">Смена пароля</x:String>
+        <x:String x:Key="RU_PassChangeText">Пароль успешно изменён</x:String>
+
+        <x:String x:Key="ENG_Mail">Enter mail</x:String>
+        <x:String x:Key="ENG_Code">Enter code</x:String>
+        <x:String x:Key="ENG_Pass">Enter new password</x:String>
+        <x:String x:Key="ENG_Cancel">Cancel</x:String>
+        <x:String x:Key="ENG_Submit">Submit</x:String>
+        <x:String x:Key="ENG_MailError">Check the mail you entered and try again</x:String>
+        <x:String x:Key="ENG_Error">Error</x:String>
+        <x:String x:Key="ENG_CodeError">Incorrect code</x:String>
+        <x:String x:Key="ENG_PassError">Come up with a new password</x:String>
+        <x:String x:Key="ENG_PassChange">Password changing</x:String>
+        <x:String x:Key="ENG_PassChangeText">Password changed successfully</x:String>
+    </ContentPage.Resources>
+</ContentPage>

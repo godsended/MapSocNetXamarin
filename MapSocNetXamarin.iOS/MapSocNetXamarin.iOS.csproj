@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4A156F4-61C3-4C2F-B8E5-A05E5E5C95B2}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MapSocNetXamarin.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MapSocNetXamarin.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>automatic</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CustomEditorRenderer.cs" />
+    <Compile Include="CustomEntryRenderer.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>3.0.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\MapSocNetXamarin\MapSocNetXamarin.csproj">
+      <Project>{4D9B9C62-0E66-4C3C-9F3D-25081A72D48A}</Project>
+      <Name>MapSocNetXamarin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\addphoto.png">
+      <Link>Resources\addphoto.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\beerstatus.png">
+      <Link>Resources\beerstatus.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\bowlingstatus.png">
+      <Link>Resources\bowlingstatus.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\chat.png">
+      <Link>Resources\chat.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\existaccountloginbg.png">
+      <Link>Resources\existaccountloginbg.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\female.png">
+      <Link>Resources\female.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\friends.png">
+      <Link>Resources\friends.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\hdots.png">
+      <Link>Resources\hdots.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\home.png">
+      <Link>Resources\home.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\homestatus.png">
+      <Link>Resources\homestatus.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\inststatus.png">
+      <Link>Resources\inststatus.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\loginbg.png">
+      <Link>Resources\loginbg.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\lovestatus.png">
+      <Link>Resources\lovestatus.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\male.png">
+      <Link>Resources\male.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\offersstatus.png">
+      <Link>Resources\offersstatus.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\params.png">
+      <Link>Resources\params.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\podium.png">
+      <Link>Resources\podium.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\rate1.png">
+      <Link>Resources\rate1.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\rate2.png">
+      <Link>Resources\rate2.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\rate3.png">
+      <Link>Resources\rate3.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\rate4.png">
+      <Link>Resources\rate4.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\ratebg.png">
+      <Link>Resources\ratebg.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\search.png">
+      <Link>Resources\search.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\sendmsg.png">
+      <Link>Resources\sendmsg.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\settings.png">
+      <Link>Resources\settings.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\soccerstatus.png">
+      <Link>Resources\soccerstatus.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\walkstatus.png">
+      <Link>Resources\walkstatus.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\whitefemale.png">
+      <Link>Resources\whitefemale.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\whitemale.png">
+      <Link>Resources\whitemale.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\MapSocNetXamarin.Android\Resources\drawable\youtubestatus.png">
+      <Link>Resources\youtubestatus.png</Link>
+    </BundleResource>
+  </ItemGroup>
+</Project>

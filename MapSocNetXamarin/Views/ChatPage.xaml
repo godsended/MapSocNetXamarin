@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:local="clr-namespace:MapSocNetXamarin.ViewModels"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:Shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
+             xmlns:Helpers="clr-namespace:MapSocNetXamarin.Helpers" x:DataType="local:TextMessage"
+             x:Class="MapSocNetXamarin.Views.ChatPage"
+             BackgroundColor="White">
+    <NavigationPage.TitleView>
+        <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
+            <ffimageloading:CachedImage x:Name="AvatarImage" HeightRequest="40" WidthRequest="40"
+                                        HorizontalOptions="Start" VerticalOptions="Center"/>
+            <Label x:Name="NameLabel" FontSize="16" FontFamily="SemiBold" Margin="50, 0, 0, 0" HorizontalOptions="Start" VerticalOptions="Start" TextColor="White"/>
+            <Label x:Name="OnlineLabel" FontSize="17" FontFamily="Light" Margin="50, 0, 0, 0" HorizontalOptions="Start" VerticalOptions="End"/>
+            <Button BackgroundColor="Transparent" Clicked="ProfileButton_Clicked" VerticalOptions="Fill" HorizontalOptions="Fill"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Helpers:ChatTemplateSelector x:Key="MessageTemplateSelector"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <!--<ScrollView VerticalOptions="Fill" HorizontalOptions="Fill" Margin="15, 0, 15, 80">
+                <StackLayout x:Name="MessagesParent" HorizontalOptions="Fill" VerticalOptions="Fill">
+
+                </StackLayout>
+            </ScrollView>-->
+            <Grid RowSpacing="0" VerticalOptions="Fill" HorizontalOptions="Fill" Margin="15, 0, 15, 80"
+           ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="1" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <ListView x:Name="ListView" Grid.Row="0"
+                SelectionMode="None"
+                BackgroundColor="AliceBlue"
+                 Margin="0" 
+                 HasUnevenRows="True" 
+                 VerticalOptions="FillAndExpand" 
+                 HorizontalOptions="Fill"
+                 SeparatorColor="Transparent" >
+                </ListView>
+                <BoxView HorizontalOptions="FillAndExpand"
+                 HeightRequest="1"
+                 BackgroundColor="LightGray"
+                 Grid.Row="1"/>
+            </Grid>
+            <Grid VerticalOptions="End" HorizontalOptions="Fill" HeightRequest="50" Margin="15, 0, 15, 15">
+                <Ellipse VerticalOptions="Center" HorizontalOptions="End"
+                             HeightRequest="50" WidthRequest="50" Fill="{DynamicResource CurrentMainBrush}"/>
+                <ffimageloading:CachedImage Source="sendmsg.png" VerticalOptions="Center" HorizontalOptions="End" Margin="0, 5, 12, 0"
+                             HeightRequest="25" WidthRequest="25" />
+                <Button x:Name="SendMessageButton" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="End"
+                             HeightRequest="25" WidthRequest="25" Clicked="SendMessageButton_Clicked"/>
+                <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Margin="0, 0, 60, 0">
+                    <Shapes:Rectangle VerticalOptions="Fill" HorizontalOptions="Fill" RadiusX="25" RadiusY="25" Fill="#F2F4F7"/>
+                    <local:CustomEntry x:Name="MessageInput" HeightRequest="25" VerticalOptions="Fill" HorizontalOptions="Fill" Margin="25, 0, 25, 0"
+                                       Placeholder="Введите сообщение" PlaceholderColor="#0F0A24" FontFamily="Light" FontSize="17"
+                                       TextColor="Black" HorizontalTextAlignment="Start"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

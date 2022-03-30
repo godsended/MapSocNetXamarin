@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9A7B8DD6-79A4-4F79-AB03-78437DF58AE1}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MapSocNetXamarin.UWP</RootNamespace>
+    <AssemblyName>MapSocNetXamarin.UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addphoto.png" />
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="beerstatus.png" />
+    <Content Include="bowlingstatus.png" />
+    <Content Include="existaccountloginbg.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="home.png" />
+    <Content Include="homestatus.png" />
+    <Content Include="icon.png" />
+    <Content Include="inststatus.png" />
+    <Content Include="lovestatus.png" />
+    <Content Include="offersstatus.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="loginbg.png" />
+    <Content Include="entrybg.png" />
+    <Content Include="male.png" />
+    <Content Include="female.png" />
+    <Content Include="settings.png" />
+    <Content Include="soccerstatus.png" />
+    <Content Include="walkstatus.png" />
+    <Content Include="whitemale.png" />
+    <Content Include="whitefemale.png" />
+    <Content Include="youtubestatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>3.0.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MapSocNetXamarin\MapSocNetXamarin.csproj">
+      <Project>{CC5F1404-C319-4031-9E57-EF71E7B39944}</Project>
+      <Name>MapSocNetXamarin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fonts\FiraSans-Bold.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fonts\FiraSans-Bold.otf.meta" />
+    <Content Include="Fonts\FiraSans-BoldItalic.otf" />
+    <None Include="Fonts\FiraSans-BoldItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Book.otf" />
+    <None Include="Fonts\FiraSans-Book.otf.meta" />
+    <Content Include="Fonts\FiraSans-BookItalic.otf" />
+    <None Include="Fonts\FiraSans-BookItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Eight.otf" />
+    <None Include="Fonts\FiraSans-Eight.otf.meta" />
+    <Content Include="Fonts\FiraSans-EightItalic.otf" />
+    <None Include="Fonts\FiraSans-EightItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-ExtraBold.otf" />
+    <None Include="Fonts\FiraSans-ExtraBold.otf.meta" />
+    <Content Include="Fonts\FiraSans-ExtraBoldItalic.otf" />
+    <None Include="Fonts\FiraSans-ExtraBoldItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-ExtraLight.otf" />
+    <None Include="Fonts\FiraSans-ExtraLight.otf.meta" />
+    <Content Include="Fonts\FiraSans-ExtraLightItalic.otf" />
+    <None Include="Fonts\FiraSans-ExtraLightItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Four.otf" />
+    <None Include="Fonts\FiraSans-Four.otf.meta" />
+    <Content Include="Fonts\FiraSans-FourItalic.otf" />
+    <None Include="Fonts\FiraSans-FourItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Hair.otf" />
+    <None Include="Fonts\FiraSans-Hair.otf.meta" />
+    <Content Include="Fonts\FiraSans-HairItalic.otf" />
+    <None Include="Fonts\FiraSans-HairItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Heavy.otf" />
+    <None Include="Fonts\FiraSans-Heavy.otf.meta" />
+    <Content Include="Fonts\FiraSans-HeavyItalic.otf" />
+    <None Include="Fonts\FiraSans-HeavyItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Italic.otf" />
+    <None Include="Fonts\FiraSans-Italic.otf.meta" />
+    <None Include="Fonts\FiraSans-Light SDF.asset" />
+    <None Include="Fonts\FiraSans-Light SDF.asset.meta" />
+    <Content Include="Fonts\FiraSans-Light.otf" />
+    <None Include="Fonts\FiraSans-Light.otf.meta" />
+    <Content Include="Fonts\FiraSans-LightItalic.otf" />
+    <None Include="Fonts\FiraSans-LightItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Medium.otf" />
+    <None Include="Fonts\FiraSans-Medium.otf.meta" />
+    <Content Include="Fonts\FiraSans-MediumItalic.otf" />
+    <None Include="Fonts\FiraSans-MediumItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Regular.otf" />
+    <None Include="Fonts\FiraSans-Regular.otf.meta" />
+    <Content Include="Fonts\FiraSans-SemiBold.otf" />
+    <None Include="Fonts\FiraSans-SemiBold.otf.meta" />
+    <Content Include="Fonts\FiraSans-SemiBoldItalic.otf" />
+    <None Include="Fonts\FiraSans-SemiBoldItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Thin.otf" />
+    <None Include="Fonts\FiraSans-Thin.otf.meta" />
+    <Content Include="Fonts\FiraSans-ThinItalic.otf" />
+    <None Include="Fonts\FiraSans-ThinItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Two.otf" />
+    <None Include="Fonts\FiraSans-Two.otf.meta" />
+    <Content Include="Fonts\FiraSans-TwoItalic.otf" />
+    <None Include="Fonts\FiraSans-TwoItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-Ultra.otf" />
+    <None Include="Fonts\FiraSans-Ultra.otf.meta" />
+    <Content Include="Fonts\FiraSans-UltraItalic.otf" />
+    <None Include="Fonts\FiraSans-UltraItalic.otf.meta" />
+    <Content Include="Fonts\FiraSans-UltraLight.otf" />
+    <None Include="Fonts\FiraSans-UltraLight.otf.meta" />
+    <Content Include="Fonts\FiraSans-UltraLightItalic.otf" />
+    <None Include="Fonts\FiraSans-UltraLightItalic.otf.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sprites\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+</Project>

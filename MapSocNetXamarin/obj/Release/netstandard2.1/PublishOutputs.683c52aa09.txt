@@ -1,0 +1,15 @@
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/MapSocNetXamarin.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/MapSocNetXamarin.deps.json
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/MapSocNetXamarin.pdb
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/Newtonsoft.Json.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/System.Numerics.Vectors.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/ImageCircle.Forms.Plugin.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/Xamarin.CommunityToolkit.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/Xamarin.Essentials.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/FFImageLoading.Platform.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/FFImageLoading.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/FFImageLoading.Forms.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/FFImageLoading.Transformations.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/Xamarin.Forms.Core.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/Xamarin.Forms.Platform.dll
+/Users/ilakolesnikov/Documents/MapSocNetXamarin/MapSocNetXamarin/bin/Release/netstandard2.1/publish/Xamarin.Forms.Xaml.dll

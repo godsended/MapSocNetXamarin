@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:local="clr-namespace:MapSocNetXamarin.ViewModels"
+                          xmlns:Shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
+                          xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             BackgroundColor="White"
+             x:Class="MapSocNetXamarin.Views.FriendsPage">
+    <NavigationPage.TitleView>
+        <Grid>
+            <ffimageloading:CachedImage HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="20" Source="podium.png"/>
+            <ImageButton x:Name="SearchButton" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="20" Source="{StaticResource Search}"
+                         BackgroundColor="Transparent" Margin="0, 0, 15, 0" Clicked="SearchButton_Clicked"/>
+            <ImageButton x:Name="ParamsButton" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="20" Source="{StaticResource Params}"
+                         BackgroundColor="Transparent" Margin="0, 0, 55, 0" Clicked="Status_Clicked"/>
+
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+
+            </StackLayout>
+
+            <local:CustomEntry x:Name="SearchInput" Text="{DynamicResource CURR_Lable}" HorizontalOptions="Center" VerticalOptions="Center"
+                               FontFamily="SemiBold" TextColor="White" FontSize="Large" WidthRequest="160" HorizontalTextAlignment="Center"
+                               IsReadOnly="True"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout x:Name="RootParent" BackgroundColor="White" Margin="0, 10, 0, 0">
+            <Grid Margin="15, 0, 0, 0">
+                <StackLayout x:Name="StatusesView" IsVisible="false" Spacing="0">
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="HomeStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="HomeStatus" Text="{DynamicResource Curr_sthom}" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked"  TextTransform="None" FontSize="16" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="WalkStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="WalkStatus" Text="{DynamicResource CURR_StWalk}" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked" TextTransform="None" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="BeerStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="BeerStatus" Text="{DynamicResource CURR_StParty}" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked" TextTransform="None" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="SoccerStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="SoccerStatus" Text="{DynamicResource CURR_StSport}" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked" TextTransform="None" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="LoveStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="LoveStatus" Text="{DynamicResource CURR_StLove}" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked" TextTransform="None" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="BowlingStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="BowlingStatus" Text="Провожу активный отдых" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked" TextTransform="None" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="OfferStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="OfferStatus" Text="{DynamicResource CURR_StOffers}" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked" TextTransform="None" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="InstStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="InstStatus" Text="{DynamicResource CURR_StInst}" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked" TextTransform="None" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="YoutubeStatusImage" WidthRequest="30" HeightRequest="30" Source="homestatus.png"/>
+                        <Button x:Name="YoutubeStatus" Text="{DynamicResource CURR_StYouTube}" BackgroundColor="Transparent" TextColor="Black"
+                                        Font="Light" Clicked="Status_Clicked" TextTransform="None" FontSize="16"/>
+                    </StackLayout>
+                </StackLayout>
+                <Shapes:Rectangle x:Name="StatusesViewFill" BackgroundColor="White" VerticalOptions="Fill" HorizontalOptions="Fill"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <x:String x:Key="CURR_StHome"></x:String>
+        <x:String x:Key="CURR_StWalk"></x:String>
+        <x:String x:Key="CURR_StParty"></x:String>
+        <x:String x:Key="CURR_StSport"></x:String>
+        <x:String x:Key="CURR_StLove"></x:String>
+        <x:String x:Key="CURR_StCheel"></x:String>
+        <x:String x:Key="CURR_StOffers"></x:String>
+        <x:String x:Key="CURR_StInst"></x:String>
+        <x:String x:Key="CURR_StYouTube"></x:String>
+        <x:String x:Key="CURR_Lable"></x:String>
+
+        <x:String x:Key="RU_StHome">Дома</x:String>
+        <x:String x:Key="RU_StWalk">Гуляю</x:String>
+        <x:String x:Key="RU_StParty">На вечеринке</x:String>
+        <x:String x:Key="RU_StSport">Занимаюсь спортом</x:String>
+        <x:String x:Key="RU_StLove">Полон любви</x:String>
+        <x:String x:Key="RU_StCheel">Активно отдыхаю</x:String>
+        <x:String x:Key="RU_StOffers">Готов к предложениям</x:String>
+        <x:String x:Key="RU_StInst">Залипаю в инсту</x:String>
+        <x:String x:Key="RU_StYouTube">Залипаю в ютубчик</x:String>
+        <x:String x:Key="RU_Lable">Друзья</x:String>
+
+        <x:String x:Key="ENG_StHome">At home</x:String>
+        <x:String x:Key="ENG_StWalk">Walking</x:String>
+        <x:String x:Key="ENG_StParty">On the party</x:String>
+        <x:String x:Key="ENG_StSport">Doing sports</x:String>
+        <x:String x:Key="ENG_StLove">Full of love</x:String>
+        <x:String x:Key="ENG_StCheel">Actively resting</x:String>
+        <x:String x:Key="ENG_StOffers">Ready for suggestions</x:String>
+        <x:String x:Key="ENG_StInst">Get stuck in Instagram</x:String>
+        <x:String x:Key="ENG_StYouTube">Get stuck in YouTube</x:String>
+        <x:String x:Key="ENG_Lable">Friends</x:String>
+    </ContentPage.Resources>
+</ContentPage>
